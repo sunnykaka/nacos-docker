@@ -104,4 +104,7 @@ Run the following command：
 Usage reference：[Nacos monitor-guide](https://nacos.io/zh-cn/docs/monitor-guide.html)
 
 **Note**:  When Grafana creates a new data source, the data source address must be **http://prometheus:9090**
- 
+
+update:
+1. 重新build docker: `cd build; docker build --tag local/nacos-server:1.1.4 --rm=true -f Dockerfile .`
+2. 启动: `docker-compose -f example/cluster-ip.yaml up -d`
